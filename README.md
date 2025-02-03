@@ -14,3 +14,6 @@ A software system that logs, processes, and tests sensor data. The system simula
 - **Database**: SQLite (local storage)
 - **Data Processing**: Dart (random data generation)
 - **API**: FastAPI for data access
+
+## Installation
+1. **Python** : 
