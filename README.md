@@ -12,5 +12,5 @@ A software system that logs, processes, and tests sensor data. The system simula
 - **Backend**: Python (FastAPI), SQLite
 - **Frontend**: Flutter (for mobile/web UI)
 - **Database**: SQLite (local storage)
-- **Data Processing**: Python (Pandas, random data generation)
+- **Data Processing**: Dart (random data generation)
 - **API**: FastAPI for data access
