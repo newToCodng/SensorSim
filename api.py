@@ -5,6 +5,14 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"]
+
+)
 
 # Pydantic model
 class SensorReading(BaseModel):
