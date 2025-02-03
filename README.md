@@ -1,5 +1,5 @@
 # SensorSim
-A software system that logs, processes, and tests sensor data. The system simulates data collection, stores it in a database, and provides an API for access.It includes automated testing and data visualization via a Flutter app.
+A software system that logs, processes, and tests sensor data. The system simulates glucose reading, stores it in a database, and provides an API for access.It includes automated testing and data visualization via a Flutter app.
 
 ## Features
 - Simulates sensor data (glucose levels).
