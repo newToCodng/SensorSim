@@ -1,6 +1,9 @@
+import os
+
 from fastapi import FastAPI
 import sqlite3
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI()
@@ -21,7 +24,8 @@ class SensorReading(BaseModel):
 
 # Database helper function to fetch data
 def get_db_connection():
-    conn = sqlite3.connect("sensor_data.db")
+    db_path = os.getenv("TEST_DB", "sensor_data.db")
+    conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row  # Allow accessing row by column name
     return conn
 
