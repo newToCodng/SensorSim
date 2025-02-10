@@ -44,15 +44,48 @@ Ensure the following tools are installed:
    - Backend tests:
    ```bash
    make test-backend
+   ```
 
    - Frontend tests:
    ```bash
    make test-frontend
+   ```
 
 ### Option 2: Using install_and_run.sh
 1. **Clone the repository**:
    ```bash
    git clone https://newToCodng/SensorSim
    cd SensorSim
+
+2. **Make the script executable**:
+   ```bash
+   chmod +x install_and_run.sh
+
+3. **Run Script**
+   ```bash
+   ./install_and_run.sh
+
+  ## Project Structure
+  ```
+  SensorSim/
+  ├── backend/ 
+  │   ├── app/             # Backend source code
+  │   │    ├── __init__.py   # Initialization module
+  │   │    ├── main.py     # FastAPI entry point
+  │   ├── tests/           # Backend tests
+  │   │   ├── __init__.py    # Test package initialization
+  │   │   ├── test_api.py  # API tests
+  │   ├── requirements.txt # Backend dependencies
+  │   ├── sensor_data.db   # Automate backend setup and run
+  ├── frontend/            
+  │   ├── lib/             # Flutter app source code
+  │   ├── test/            # Flutter tests
+  │   ├──pubspec.yaml      # Flutter dependencies
+  │   └── build/           
+  ├── install_and_run.sh   # Shell script to automate setup
+  └── README.md            # Project documentation
+   ``` 
+
+   
    
   
