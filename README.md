@@ -16,11 +16,43 @@ A software system that logs, processes, and tests sensor data. The system simula
 - **API**: FastAPI for data access
 
 ## Installation
-### Backend(API)
-1. **Install Python dependencies**:
-   ```bash
-   pip install -e
 
-2. **Activate virtual environment**:
+### Prerequisites
+Ensure the following tools are installed:
+- Python 3.8+ (Backend)
+- Flutter SDK (Frontend)
+- pip (Python package manager)
+- Bash shell (install_and_run.sh)
+- make (for Makefile, optional)
+
+  
+### Option 1: Using Makefile (Recommended)
+1. **Clone the repository**:
    ```bash
-   source venv/bin/activate # for macbook 
+   git clone https://github.com/newToCodng/SensorSim
+   cd SensorSim
+
+2. **Install both backend and frontend dependencies**:
+   ```bash
+   make install-all
+
+3. **Run both backend and frontend**:
+   ```bash
+   make run-all
+   
+4. **Run tests**:
+   - Backend tests:
+   ```bash
+   make test-backend
+
+   - Frontend tests:
+   ```bash
+   make test-frontend
+
+### Option 2: Using install_and_run.sh
+1. **Clone the repository**:
+   ```bash
+   git clone https://newToCodng/SensorSim
+   cd SensorSim
+   
+  
