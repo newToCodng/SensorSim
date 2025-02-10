@@ -22,7 +22,8 @@ class _MyAppState extends State<MyApp> {
   // Fetch data and update state
   Future<void> _fetchData() async {
     try {
-      final data = await ApiService.getReadings();
+      final apiService = ApiService();
+      final data = await apiService.getReadings();
       setState(() {
         _readings = data; //Update state with new data
       });
